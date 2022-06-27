@@ -3,7 +3,7 @@ return function()
   local palette = {
     -- Background Colors
     bg = '#ffffff',
-    bg2 = '#f6f8fa',
+    bg2 = '#ffffff',
 
     -- foreground colors
     fg = '#003333',
@@ -13,16 +13,16 @@ return function()
     fg_term = '#24292f',
 
     -- Background Highlights Colors
-    bg_highlight = '#d5e5f6',
+    bg_highlight = '#ccffcc',
     bg_search = '#fff2be',
     bg_visual = '#e1e4e8',
-    bg_visual_selection = '#dbe9f9',
+    bg_visual_selection = '#ccffcc',
     border = '#044289',
 
     -- Cursor & LineNumber Colors
-    cursor = '#044289',
+    cursor = '#009900',
     cursor_line_nr = '#009999',
-    line_nr = '#999999',
+    line_nr = '#808080',
 
     -- LSP & Diagnostic Colors
     error = '#cb2431',
@@ -54,13 +54,13 @@ return function()
 
     -- Syntax Colors
     syntax = {
-      comment = '#6a737d',
-      constant = '#005cc5',
-      string = '#032f62',
-      variable = '#005cc5',
-      keyword = '#d73a49',
-      func = '#6f42c1',
-      func_param = '#24292e',
+      comment = '#6666ff',
+      constant = '#003333',
+      string = '#cc00cc',
+      variable = '#003333',
+      keyword = '#990066',
+      func = '#009999',
+      func_param = '#006666',
       match_paren_bg = '#c6eed2',
       tag = '#22863a',
       html_arg = '#b31d28',
