@@ -1,105 +1,95 @@
-local util = require('github-theme.util')
-local light_palette = require('github-theme.palette.light')
-
 return function()
   ---@type gt.ColorPalette
   local palette = {
     -- Background Colors
     bg = '#ffffff',
-    bg2 = '#f6f8fa',
+    bg2 = '#ffffff',
 
-    -- Foreground Colors
-    -- fg = '#24292e',
-    fg_dark = '#424242',
-    fg_gutter = '#24292e',
-    fg_light = '#24292e',
-    fg_term = '#0E1116',
+    -- foreground colors
+    fg = '#003333',
+    fg_dark = '#666666',
+    fg_gutter = '#babbbd',
+    fg_light = '#586069',
+    fg_term = '#24292f',
 
     -- Background Highlights Colors
-    -- bg_highlight = '#d5e5f6',
-    -- bg_search = '#fff2be',
-    -- bg_visual = '#e1e4e8',
-    -- bg_visual_selection = '#dbe9f9',
-    -- border = '#044289',
+    bg_highlight = '#ccffcc',
+    bg_search = '#fff2be',
+    bg_visual = '#e1e4e8',
+    bg_visual_selection = '#ccffcc',
+    border = '#044289',
 
     -- Cursor & LineNumber Colors
-    -- cursor = '#044289',
-    -- cursor_line_nr = '#24292e',
-    -- line_nr = '#959da5',
+    cursor = '#009900',
+    cursor_line_nr = '#009999',
+    line_nr = '#808080',
 
     -- LSP & Diagnostic Colors
-    -- error = '#cb2431',
-    -- warning = '#bf8803',
-    -- info = '#75beff',
-    -- hint = '#6c6c6c',
-    lsp = { ref_txt = '#ccf3d5' },
+    error = '#cb2431',
+    warning = '#bf8803',
+    info = '#75beff',
+    hint = '#6c6c6c',
+    lsp = { ref_txt = '#c6eed2' },
 
     -- Auto-Complication Colors
-    pmenu = {
-      -- bg = '#f6f8fa',
-      sbar = '#e7e9eb',
-    },
+    pmenu = { bg = '#f6f8fa', sbar = '#f0f1f3' },
 
     -- Git & Diff Colors
     git = {
-      add = '#22863a',
-      change = '#b08800',
-      delete = '#cb2431',
-      conflict = '#b08800',
-      -- ignore = '#959da5',
-      -- renamed = '#007100',
+      add = '#28a745',
+      change = '#895503',
+      delete = '#d73a49',
+      conflict = '#e36209',
+      ignore = '#959da5',
+      renamed = '#007100',
     },
-    -- diff = {
-    --   add = '#d4f8db',
-    --   add_fg = '#22863a',
-    --   change = '#fff5b1',
-    --   change_fg = '#b08800',
-    --   delete = '#fae5e7',
-    --   delete_fg = '#cb2431',
-    -- },
+    diff = {
+      add = '#d4f8db',
+      add_fg = '#22863a',
+      change = '#fff5b1',
+      change_fg = '#b08800',
+      delete = '#fae5e7',
+      delete_fg = '#cb2431',
+    },
 
     -- Syntax Colors
     syntax = {
-      -- comment = '#6a737d',
-      -- constant = '#005cc5',
-      -- string = '#032f62',
-      variable = '#e36209',
-      -- keyword = '#d73a49',
-      -- func = '#6f42c1',
-      -- func_param = '#24292e',
-      match_paren_bg = '#ccf3d5',
-      -- tag = '#22863a',
-      -- html_arg = '#b31d28',
-      -- param = '#e36209',
-      -- json_label = '#005cc5',
+      comment = '#6666ff',
+      constant = '#003333',
+      string = '#cc00cc',
+      variable = '#003333',
+      keyword = '#990066',
+      func = '#009999',
+      func_param = '#006666',
+      match_paren_bg = '#c6eed2',
+      tag = '#22863a',
+      html_arg = '#b31d28',
+      param = '#e36209',
+      json_label = '#005cc5',
     },
 
     -- Terminal Colors
-    -- orange = '#d18616',
-    black = '#24292f',
-    bright_black = '#57606a',
-    white = '#6e7781',
-    bright_white = '#8c959f',
-    red = '#cf222e',
-    bright_red = '#a40e26',
-    green = '#116329',
-    bright_green = '#1a7f37',
-    yellow = '#4d2d00',
-    bright_yellow = '#633c01',
-    blue = '#0969da',
-    bright_blue = '#218bff',
-    magenta = '#8250df',
-    bright_magenta = '#a475f9',
-    cyan = '#1b7c83',
+    orange = '#d18616',
+    black = '#24292e',
+    bright_black = '#959da5',
+    white = '#6a737d',
+    bright_white = '#d1d5da',
+    red = '#d73a49',
+    bright_red = '#cb2431',
+    green = '#28a745',
+    bright_green = '#22863a',
+    yellow = '#dbab09',
+    bright_yellow = '#b08800',
+    blue = '#0366d6',
+    bright_blue = '#005cc5',
+    magenta = '#5a32a3',
+    bright_magenta = '#5a32a3',
+    cyan = '#0598bc',
     bright_cyan = '#3192aa',
 
     -- Plugin Colors
-    git_signs = {
-      add = '#34d058',
-      change = '#f9c513',
-      -- delete = '#d73a49'
-    },
+    git_signs = { add = '#28a745', change = '#2188ff', delete = '#d73a49' },
   }
 
-  return util.color_overrides(light_palette(), palette)
+  return palette
 end
