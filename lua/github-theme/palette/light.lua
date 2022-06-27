@@ -6,7 +6,7 @@ return function()
     bg2 = '#f6f8fa',
 
     -- foreground colors
-    fg = '#24292f',
+    fg = '#003333',
     fg_dark = '#666666',
     fg_gutter = '#babbbd',
     fg_light = '#586069',
@@ -21,8 +21,8 @@ return function()
 
     -- Cursor & LineNumber Colors
     cursor = '#044289',
-    cursor_line_nr = '#24292e',
-    line_nr = '#babbbd',
+    cursor_line_nr = '#009999',
+    line_nr = '#999999',
 
     -- LSP & Diagnostic Colors
     error = '#cb2431',
